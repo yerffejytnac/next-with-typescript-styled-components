@@ -1,10 +1,15 @@
-import styled from 'styled-components'
+import { Layout } from "@components";
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const IndexPage = () => {
+  return (
+    <Layout>
+      <h1>Application</h1>
+      <p>
+        Farm-to-table coloring book health goth bespoke photo booth mustache
+        chillwave vegan.
+      </p>
+    </Layout>
+  );
+};
 
-export default function Home() {
-  return <Title>My page</Title>
-}
+export default IndexPage;
