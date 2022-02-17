@@ -20,6 +20,7 @@ export default class Document extends NextDocument {
         });
 
       const initialProps = await NextDocument.getInitialProps(ctx);
+
       return {
         ...initialProps,
         styles: (
@@ -35,7 +36,7 @@ export default class Document extends NextDocument {
   }
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link
             rel="preload"
