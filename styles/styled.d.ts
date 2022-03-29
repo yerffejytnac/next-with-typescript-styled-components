@@ -31,17 +31,22 @@ type CommonColors = "transparent" | "black" | "white";
 type ExtendedColors =
   | CommonColors
   | "blue"
+  | "blueGray"
+  | "blueLight"
+  | "brown"
   | "cyan"
-  | "fuschia"
   | "gray"
   | "green"
+  | "greenLight"
   | "indigo"
   | "lime"
   | "orange"
+  | "orangeDeep"
   | "pink"
+  | "purple"
+  | "purpleDeep"
   | "red"
   | "teal"
-  | "violet"
   | "yellow";
 
 type FontFamilies = "heading" | "body" | "monospace";
