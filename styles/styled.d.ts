@@ -11,20 +11,12 @@ interface CSSProperties
     CSS.SvgProperties<number | string>,
     CSS.VendorProperties<number | string> {}
 
-interface ScaleDict<T> {
-  [K: string]: T | T[] | NestedScaleDict<T> | undefined;
-  [I: number]: T;
-}
-
-interface ObjectWithDefault<T> {
-  __default?: T;
-}
-
-interface NestedScaleDict<T> extends ScaleDict<T>, ObjectWithDefault<T> {}
-
 type Scale<T> = T[] | ScaleDict<T>;
 
-type NestedScale<T> = T[] | NestedScaleDict<T>;
+interface ScaleDict<T> {
+  [K: string]: T | T[] | undefined;
+  [I: number]: T;
+}
 
 type Breakpoints = "xs" | "sm" | "md" | "lg" | "xl";
 type CommonColors = "transparent" | "black" | "white";

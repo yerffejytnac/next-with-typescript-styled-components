@@ -1,12 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 import { localFonts } from "./fonts";
-import { normalize } from "./normalize";
+import { reset } from "./reset";
 import { theme } from "./theme";
 
 export const GlobalStyles = createGlobalStyle`
   ${localFonts};
-  ${normalize};
+  ${reset};
 
   :root {
     box-sizing: border-box;
@@ -18,6 +18,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     font-family: ${theme.fonts.body};
     font-weight: ${theme.fontWeights.light};
     line-height: ${theme.lineHeights.body};

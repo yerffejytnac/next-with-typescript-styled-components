@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^12.1.0",
+    "next": "^12.1.4",
     "react": "^18.0.0-rc.0",
     "react-dom": "^18.0.0-rc.0",
     "styled-breakpoints": "^11.0.4",
