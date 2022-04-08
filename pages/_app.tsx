@@ -3,7 +3,12 @@ import { ThemeProvider } from "styled-components";
 
 import { theme, GlobalStyles } from "@styles";
 
-const App = ({ Component, pageProps }: AppProps) => {
+interface Props extends AppProps {
+  // TODO: See issue documented here... https://github.com/vercel/next.js/issues/36008
+  Component: any;
+}
+
+const App = ({ Component, pageProps }: Props) => {
   return (
     <>
       <GlobalStyles />

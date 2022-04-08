@@ -15,7 +15,8 @@ export default class Document extends NextDocument {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
+          // // TODO: See issue documented here... https://github.com/vercel/next.js/issues/36008
+          enhanceApp: (App: any) => (props) =>
             sheet.collectStyles(<App {...props} />),
         });
 
